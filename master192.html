@@ -1,0 +1,86 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="description" content="{metadescription}" />
+		<meta name="keywords" content="{metakeywords}" />
+		!cHeader.htm!
+		<!--<link rel="stylesheet" href="include/templatemb.css" type="text/css"/>-->
+		<title>{Title} | EdChoice</title>
+	</head>
+	<body onload="if (typeof functionOnLoad =='function')functionOnLoad();">
+
+		<!--
+		  // This navigation will appear on all pages except for the Home Page.
+		  // This is a better solution instead of adding it to the header.html.
+		/-->
+		<div class="nav">
+			<div class="nav-top-links">
+				<div class="container">
+					<ul>
+						<li><a href="/registration.asp">Account</a></li>
+						<li><a href="mailto:info@priority-press.com">Need Help?</a></li>
+						<li><a href="/Login.asp?red=//edchoice.mybrandstorefront.com">Logout</a></li>
+					</ul>
+				</div>
+			</div>
+			
+			<div class="container">
+				<div class="nav-brand">
+					<img src="Files/BrokerBranding/edchoice/Include/logo.png" alt="EdChoice" />
+				</div>
+				
+				<div class="nav-links">
+					<ul>
+						<li><a href="/retailsite.asp">Home</a></li>
+						<li><a href="/ProductCats.asp?cid=all">Products</a></li>
+						<li><a href="/orders.asp">Orders</a></li>
+						<li><a href="/reports.asp">Reports</a></li>
+						<li><a href="/cart.asp">Shopping Cart</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<!--
+		  // This is the start to the main content that will be diplayed on each
+		  // page. This has been edited so it uses bootstrap instead of tables.  
+		/-->
+		<div class="container page-top">
+			<div class="row">
+				<div class="page-hero">
+					<div class="content">
+						<!--Title-->
+						<h1 id="mastertitle" class="page-title">{Title}</h1>
+						<!--/Title-->
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="maintable" class="container">
+			<div class="row">
+				<div id="contenttable" class="content">
+					<!--HelpText-->
+					<blockquote class="help" id="masterhelptext">{HelpText}</blockquote>
+					<!--/HelpText-->
+					<!--CONTENT-->
+					<!--/CONTENT-->
+				</div>
+			</div>
+		</div>
+
+		<!--
+		  // This footer will appear on all pages except for the Home Page.
+		  // This will put the footer.html inside of of this div.
+		/-->
+		<div id="contentfooter" class="footer-container">
+			!cFooter.htm!
+		</div>
+	</body>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.0/bootstrap-table.min.js" integrity="sha256-eXHLyyVI+v6X1wbfg9NB05IWqOqY4E9185nHZgeDIhg=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="Files/BrokerBranding/edchoice/Include/scripts.js"></script>
+</html>

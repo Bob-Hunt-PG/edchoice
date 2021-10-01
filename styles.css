@@ -1,0 +1,633 @@
+/**
+		  *  CSS Reset
+		  *  ----------------------------------------------------------------------------
+		  *
+		  *  The CSS below resets the styles that are originally set by default 
+		  *  for most of the clients browsers.
+		  *
+		  *  ----------------------------------------------------------------------------
+		  */
+			html, body {
+				width: 100%;
+				height: 100%;
+				margin: 0;
+				padding: 0;
+				font-family: 'Raleway', sans-serif;
+			}
+			
+			.bg {
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				width: 100%;
+				height: 540px;
+			}
+
+			form[name="Form1"] > .bootstrap-table ~ .btn {
+				margin-top: 15px;
+			}
+			
+			.v-mid:before {
+				content: '';
+				display: inline-block;
+				height: 100%;
+				vertical-align: middle;
+				margin-left: -0.25em;
+			}
+			
+			.v-mid > .container {
+				display: inline-block;
+				text-align: left;
+			}
+			
+			.v-mid .v-insert {
+				display: inline-block;
+				vertical-align: middle;
+				width: 90%;
+				max-width: 400px;
+			}
+			
+			a.btn {
+				background: #6b3077;
+				padding: 10px 15px;
+				border: 3px solid #6b3077;
+				border-radius: 0;
+				color: #ffffff;
+				font-weight: 400;
+				font-size: 16px;
+			}
+
+			input.btn-primary {
+				background: none;
+				padding: 10px; 15px;
+				border: 3px solid #0092BC;
+				border-radius: 0;
+				color: #333333;
+				font-weight: 400;
+				font-size: 16px;
+			}
+			
+			a.btn:hover {
+				color: #ffffff;
+			}
+
+			.addtocart {
+			    text-align: right;
+			    padding-top: 10px;
+			}
+
+			.product-panel a.btn:hover,
+			.product-panel a.btn:focus,
+			input.btn-primary:hover,
+			input.btn-primary:focus {
+				background: none;
+				border: 3px solid #0092BC;
+			    color: #333333;
+			}
+
+			.btn-primary {
+			    background: #ffffff;
+			    border-radius: 0;
+			}
+
+			.btn-default {
+			    padding: 9px 15px;
+			}
+
+
+			.btn-default .caret {
+			    margin-left: 2px;
+			    float: right;
+			    margin-top: 7px;
+			}
+
+			.maintext .table {
+			    margin: 0;
+			}
+
+			#btnPreview {
+			    float: right;
+			}
+			
+			.header-master {
+				height: 99px;
+			}
+			
+			.content-master {
+				padding: 50px 0 100px;
+			}
+			
+			.page-title {
+				margin: 0 0 15px;
+				padding: 50px 0 10px;
+				border-bottom: 5px solid #0092BC;
+			}
+			
+			.help-text {
+				font-size: 16px;
+				margin: 0;
+				padding: 0 0 30px;
+			}
+			
+		/**
+		  *  Navigation Styles
+		  *  ----------------------------------------------------------------------------
+		  *
+		  *  The CSS below sets the styles for the navbar on every page.
+		  *
+		  *  ----------------------------------------------------------------------------
+		  */
+			.nav {
+				width: 100%;
+				background: #ffffff;
+				box-shadow: 0px -2px 7px #000;
+				font-family: 'Lato', sans-serif;
+				z-index: 1;
+			}
+			
+			.nav .nav-top-links {
+				background: #0092BC;
+			}
+			
+			.nav .nav-top-links ul {
+				margin: 0;
+				padding: 0;
+				list-style: none;
+				text-align: right;
+			}
+			
+			.nav .nav-top-links ul li {
+				display: inline-block;
+			}
+			
+			.nav .nav-top-links ul li > a {
+				display: block;
+				padding: 5px 10px;
+				color: #ffffff;
+				font-weight: 600;
+				font-size: 12px;
+			}
+			
+			.nav .nav-brand {
+				float: left;
+			}
+			
+			.nav .nav-brand img {
+				max-height: 72px;
+				padding: 16px 0;
+			}
+			
+			.nav .nav-links {
+				float: right;
+			}
+			
+			.nav .nav-links ul {
+				margin: 0;
+				padding: 0;
+				list-style: none;
+			}
+			
+			.nav .nav-links ul > li {
+				display: inline-block;
+			}
+			
+			.nav .nav-links ul > li:first-child {
+				margin-left: 0;
+			}
+			
+			.nav .nav-links ul > li > a {
+				display: block;
+				padding: 25px 15px;
+				color: #595959;
+				font-weight: bold;
+				font-size: 14px;
+			}
+			
+			
+		/**
+		  *  Hero Styles
+		  *  ----------------------------------------------------------------------------
+		  *
+		  *  The CSS below sets the styles for the hero-image and hero text
+		  *  on the home page.
+		  *
+		  *  ----------------------------------------------------------------------------
+		  */
+			.hero-container {
+				position: relative;
+				width: 100%;
+				height: 540px;
+			}
+			  
+			.hero-container > .hero-content > .hero {
+				background: url(hero.png) no-repeat center center; 
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover;
+				text-align: center;
+				color: #ffffff;
+			}
+			
+			.hero-container > .hero-content > .hero p > b {
+				font-weight: 400;
+				padding: 10px 15px;
+				background: #6b3077;
+				text-transform: uppercase;
+			}
+			  
+			.hero-container > .hero-content > .hero h1 {
+				margin: 0;
+				padding: 15px 0 30px;
+				font-weight: 600;
+				text-shadow: 1px 1px 2px #595959;
+			}
+		  
+		  
+		  /**
+		  *  Product Catalog Styles
+		  *  ----------------------------------------------------------------------------
+		  *
+		  *  The CSS below sets the styles for the product catalog panels
+		  *  on the home page.
+		  *
+		  *  ----------------------------------------------------------------------------
+		  */
+			.product-catalog {
+				padding: 50px 0 75px;
+			}
+		  
+			.product-panel {
+				float: left;
+				width: 100%;
+				/*max-width: 33.33333333333333%;*/
+				max-width: 25%;
+				padding: 0 7.5px;
+			}
+			
+			.product-panel:first-of-type {
+				padding-left: 0;
+				padding-right: 15px;
+			}
+			
+			.product-panel:last-of-type {
+				padding-left: 15px;
+				padding-right: 0;
+			}
+			
+			.product-panel > img {
+				width: 100%;
+			}
+			
+			.product-panel > h3 {
+				color: #6b3077;
+				font-weight: 600;
+			}
+			
+			.product-panel > .btn {
+				color: #ffffff;
+			}
+			
+			
+		/**
+		  *  Product Catalog Styles
+		  *  ----------------------------------------------------------------------------
+		  *
+		  *  The CSS below sets the styles for the product catalog panels
+		  *  on the home page.
+		  *
+		  *  ----------------------------------------------------------------------------
+		  */
+		  	#contentfooter {
+			    margin-top: 50px;
+			}
+
+			.footer {
+				padding: 50px 0 70px;
+				background: #0092BC;
+			}
+			
+			.footer-panel {
+				float: left;
+				width: 100%;
+				max-width: 20%;
+			}
+			
+			.footer-panel h2 {
+				margin: 0;
+				padding: 0 0 25px;
+				font-size: 16px;
+				text-transform: uppercase;
+				color: #ffffff;
+			}
+			
+			.footer-panel ul {
+				margin: 0;
+				padding: 0;
+				list-style: none;
+			}
+			
+			.footer-panel ul.social-icons li {
+				display: inline-block;
+				margin: 0 3px;
+				vertical-align: top;
+			}
+			
+			.footer-panel ul.social-icons li:first-of-type {
+				margin-left: 0;
+			}
+			
+			.footer-panel ul.social-icons li a {
+				display: block;
+				font-size: 30px;
+			}
+			
+			.footer-panel ul.social-icons li a i {
+				vertical-align: top;
+			}
+			
+			.footer-panel ul li a {
+				color: #ffffff;
+			}
+			
+			.footer-panel ul li .field {
+				width: 90%;
+				padding: 5px 10px;
+				border: 1px solid #d9d9d9;
+			}
+			
+			.copyright {
+				padding: 50px 0 0;
+				margin: 0;
+				font-size: 12px;
+				color: #ffffff;
+			}
+
+.table.login,
+.table.register {
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #dddddd;
+}
+
+.table.categories {
+    width: 100%;
+    border: 1px solid #dddddd;
+    margin-top: 50px;
+}
+
+.table.style {
+    border: 1px solid #dddddd;
+}
+
+.table.orderdetails {
+    border: 1px solid #dddddd;
+}
+
+.table.buttons td {
+    border-top: none;
+}
+
+.table.style img {
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #dddddd;
+}
+
+.style-title {
+    max-width: 100px;
+}
+
+.orderdetails-title {
+    max-width: 31px;
+}
+
+.table.orderdetails td:last-of-type {
+    border-right: 1px solid #dddddd;
+}
+
+.table.login th,
+.table.register th,
+.table.categories th {
+    padding: 16px;
+    background: #ffffff;
+}
+
+.table.login {
+    float: left;
+}
+
+.table.register {
+    float: left;
+    margin: 0 0 0 50px;
+    display: none;
+}
+
+.table.login .table tr td,
+.table.register .table tr td {
+    border: none;
+}
+
+.table.login .table tr td input,
+.table.register .table tr td input[type="text"],
+.table.register .table tr td input[type="password"] {
+    width: 100%;
+    padding: 5px 10px;
+    border: 1px solid #dddddd;
+}
+
+.table.register .table tr td input[type="checkbox"] {
+	display: inline-block;
+	margin-left: 10px;
+	vertical-align: inherit;
+}
+
+.table.login .table tr td input.btn,
+.table.register tr td input.btn {
+    border: 2px solid #0092BC;
+    color: #333333;
+    padding: 5px 25px;
+}
+
+.table.login .table tr td input.btn:hover, 
+.table.register tr td input.btn:hover,
+.table.login .table tr td input.btn:focus, 
+.table.register tr td input.btn:focus {
+    background: #ffffff;
+}
+
+.forgot-password {
+    margin-top: 8px;
+    display: block;
+}
+
+#masterhelptext {
+    border: none;
+    padding: 0 0 50px;
+    margin: 0;
+}
+
+#masterhelptext > a {
+	color: #6b3077;
+}
+
+.table.register>tbody>tr>td {
+    border: 1px solid #dddddd;	
+}
+
+.table.categories th:last-of-type {
+    text-align: right;
+}
+
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+	vertical-align: middle;
+}
+
+#tabDelDetails input[type="text"], #tabDelDetails select, #tabDelDetails textarea {
+    padding: 5px 10px;
+    margin: 5px 20px;
+    border: 1px solid #dddddd;
+    width: 100%;
+    max-width: 320px;
+}
+
+.addresslabel ~ td {
+    border: none !important;
+}
+
+#tabDelDetails .bordertableheader ~ .bordertableheader {
+    border: none !important;
+    padding: 20px;
+}
+
+.templatedetails {
+    width: 100%;
+    max-width: 400px;
+    float: left;
+}
+
+.table.proof {
+    float: right;
+    max-width: 400px;
+    margin-top: 28px;
+}
+
+.table.details:first-of-type td {
+    border: none !important;
+}
+
+.labeltext {
+	background: #0092BC;
+}
+
+.table.saveddata tr td {
+    border: none;
+}
+
+#thumbLP,
+#thumbBackLP {
+    border: 1px solid #dddddd;
+}
+
+.table.proof td {
+    border: none;
+}
+
+.maintext {
+    max-width: 268px;
+    border-right: 1px solid #dddddd;
+}
+
+.maintext:last-of-type,
+.labeltext:last-of-type {
+	border-bottom: 1px solid #dddddd;
+}
+
+.maintext .table td input {
+    width: 100%;
+    padding: 5px 10px;
+}
+
+.maintext .table td {
+    border-top: none !important;
+}
+
+.table.checkout {
+    border: 1px solid #dddddd;
+}
+
+.table.checkoutitems {
+    border: 1px solid #dddddd;
+}
+
+.table.checkout td {
+    border: 1px solid #dddddd;
+    vertical-align: top;
+}
+
+.table.checkoutitems th, .table.checkoutitems td {
+    border-bottom: none;
+    border: 1px solid #dddddd;
+}
+
+.table.thankyou {
+    border: none
+}
+
+.table.thankyou td {
+    border: 1px solid #dddddd;
+}
+
+.table.thankyou td table td {
+    border: none;
+}
+
+.table.thankyou td[colspan="10"] {
+    padding: 10px 0;
+    border: none;
+}
+
+.table.thankyou #lasstcolumn {
+    display: none;
+}
+
+.table.thankyou td table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.proofthumbnailform {
+    float: left;
+}
+
+.table.proofthumbnail td {
+    border: 1px solid #dddddd;
+}
+
+.proofrhs {
+    float: right;
+}
+
+.table.proofwrite td {
+    border: 1px solid #dddddd;
+}
+
+#proofScreenEditOrderDetails {
+    margin: 0;
+}
+
+#proofScreenEditOrderDetails td {
+    border-bottom: none;
+}
+
+#proofScreenOrderDetails td:first-of-type {
+    width: 150px;
+    font-weight: 600;
+}
+
+#proofScreenOrderDetails td {
+    border: 1px solid #dddddd;
+}
+
